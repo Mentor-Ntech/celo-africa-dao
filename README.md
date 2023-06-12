@@ -1,22 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Welcome to Celo Africa DAO Official Website 👋
 
-## Getting Started
+[![GitHub issues](https://img.shields.io/github/issues/Khadeeejah/celo-africa-dao)](https://github.com/Khadeeejah/celo-africa-dao/issues)
+[![GitHub stars](https://img.shields.io/github/stars/Khadeeejah/celo-africa-dao)](https://github.com/Khadeeejah/celo-africa-dao/stargazers)
+[![GitHub license](https://img.shields.io/github/license/Khadeeejah/celo-africa-dao)](https://github.com/Khadeeejah/celo-africa-dao)
 
-First, run the development server:
+This is the repository for the Celo Africa DAO website.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+This repository accepts contributions via GitHub pull requests. This document outlines some contributing guidelines,
+contact points, and other resources to make it easier to contribute to this repository.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+If you've run into a problem or have a suggestion, browse the open [issues][is]
+before opening a new one. We use the following [label system][la] to organize
+our issues.
+<!-- 
+- ![][cr] for typos, broken links, and other quick fixes
+- ![][tr] for additions to the FAQ and Troubleshooting sections
+- ![][im] for revisions, rewrites, and larger improvements
+- ![][fe] for feedback on structure & content
+- ![][qu] for questions that can't be answered via documentation
+- ![][fi] for improvements and fixups related to the look and feel of the docs
+  site
+ - ![][gd] for good first issues
+  
+ -->
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# How to Contribute
+
+- [Get Started](#get-started)
+- [Editing Content](#editing-content)
+- [Contributing](#contributing)
+
+## Get Started
+
+- Create a fork of the repository or create a template, install neccessary dependencies by running `yarn`
+- To start your server, run `yarn build` or `yarn-start`  and you'll have your development server running on **localhost:3000**
+
+## Editing Content
+To add a new content, e.g page, please note this is a NextJS app, a knowledge of NextJS is required to work with files and how pages are routed. 
 
 ## Learn More
 
@@ -27,8 +48,48 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions to this repository can be made via pull requests on GitHub to the Staging Branch. When opening a PR, please tag
+[@Khadeeejah](https://github.com/Khadeeejah)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+<!-- [cr]: https://img.shields.io/badge/labels/bug
+[cs]: https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/signing-commits
+[fe]: https://img.shields.io/badge/-feedback-%23DD0BE1
+[fi]: https://img.shields.io/badge/-ui-1d76db -->
+[is]: https://github.com/Khadeeejah/celo-africa-dao/issues
+[la]: https://github.com/Khadeeejah/celo-africa-dao/labels
+<!-- [qu]: https://img.shields.io/badge/-question-C0EE59
+[tr]: https://img.shields.io/badge/-troubleshooting-%23FBCA04
+[gd]: https://github.com/Khadeeejah/celo-africa-dao/labels/good%20first%20issue
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
