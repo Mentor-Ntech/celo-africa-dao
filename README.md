@@ -50,6 +50,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Contributing
 
+- Comment under an issue you want to be assigned to
+- Create a New branch from `staging` with your name and the feature you are working on. for example 
+  `Khadeejah/hero-section`
+- Make sure you do a rebase or pull before making your pull request back to `staging`
+- On your pull request, make a refrence of the isssue you just worked on
+
+ 
 Contributions to this repository can be made via pull requests on GitHub to the Staging Branch. When opening a PR, please tag
 [@Khadeeejah](https://github.com/Khadeeejah)
 
