@@ -27,9 +27,12 @@ our issues.
 
 # How to Contribute
 
-- [Get Started](#get-started)
-- [Editing Content](#editing-content)
-- [Contributing](#contributing)
+- [Welcome to Celo Africa DAO Official Website 👋](#welcome-to-celo-africa-dao-official-website-)
+- [How to Contribute](#how-to-contribute)
+  - [Get Started](#get-started)
+  - [Editing Content](#editing-content)
+  - [Learn More](#learn-more)
+  - [Contributing](#contributing)
 
 ## Get Started
 
@@ -37,7 +40,7 @@ our issues.
 - To start your server, run `yarn build` or `yarn-start`  and you'll have your development server running on **localhost:3000**
 
 ## Editing Content
-To add a new content, e.g page, please note this is a NextJS app, a knowledge of NextJS is required to work with files and how pages are routed. 
+To add a new content, e.g page, please note this is a NextJS and Chakra-ui app, a knowledge of NextJS and Chakra-ui is required to work with files and how pages are routed. 
 
 ## Learn More
 
@@ -46,8 +49,9 @@ To learn more about Next.js, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To learn more about Chakra-ui , take a look at the following resources:
 
+- [Chakra-ui Documentation](https://chakra-ui.com/getting-started/nextjs-guide) - learm about Chakra-ui and its different components.
 ## Contributing
 
 - Comment under an issue you want to be assigned to
