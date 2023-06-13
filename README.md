@@ -36,8 +36,8 @@ our issues.
 
 ## Get Started
 
-- Create a fork of the repository or create a template, install neccessary dependencies by running `yarn`
-- To start your server, run `yarn build` or `yarn-start`  and you'll have your development server running on **localhost:3000**
+- Create a fork of the repository or create a template, install neccessary dependencies by running `yarn`.
+- To start your server, run `yarn build` or `yarn-start`  and you'll have your development server running on **localhost:3000**.
 
 ## Editing Content
 To add a new content, e.g page, please note this is a NextJS and Chakra-ui app, a knowledge of NextJS and Chakra-ui is required to work with files and how pages are routed. 
@@ -52,17 +52,19 @@ To learn more about Next.js, take a look at the following resources:
 To learn more about Chakra-ui , take a look at the following resources:
 
 - [Chakra-ui Documentation](https://chakra-ui.com/getting-started/nextjs-guide) - learm about Chakra-ui and its different components.
+
 ## Contributing
 
-- Comment under an issue you want to be assigned to
-- Create a New branch from `staging` with your name and the feature you are working on. for example 
-  `Khadeejah/hero-section`
-- Make sure you do a rebase or pull before making your pull request back to `staging`
-- On your pull request, make a refrence of the isssue you just worked on
+- Comment under an issue you want to be assigned to.
+- Create a New branch from `staging` with your name and the feature you are working on. for example
+  `Khadeejah/hero-section`.
+- Make sure you do a rebase or pull before making your pull request back to `staging`.
+- On your pull request, refrence the issue you worked on by mentioning the issue number or uurl you worked on.
+
 
  
 Contributions to this repository can be made via pull requests on GitHub to the Staging Branch. When opening a PR, please tag
-[@Khadeeejah](https://github.com/Khadeeejah)
+[@Khadeeejah](https://github.com/Khadeeejah).
 
 
 
