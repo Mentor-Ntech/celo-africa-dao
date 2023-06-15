@@ -19,10 +19,10 @@ const developers = [
 ];
 
 const community = [
-  { icon: <FaSlack />, url: "#" },
+  { icon: <FaSlack />, url: "https://slack.com" },
   { icon: <FaTelegramPlane />, url: "https://telegram.com" },
-  { icon: <FaTwitter />, url: "#" },
-  { icon: <FaGithub />, url: "#" },
+  { icon: <FaTwitter />, url: "https://twitter.com" },
+  { icon: <FaGithub />, url: "https://github.com" },
 ];
 
 const date = new Date();
@@ -33,7 +33,7 @@ const Footer = () => {
     <footer style={{ backgroundColor: "#FCF951", padding: "20px" }}>
       <Box w="100%">
         <Box w="100%" display="flex" gap={5} justifyContent="flex-start">
-          <Image src={Logo} alt="celo" width={150} />
+          <Image src={Logo} alt="celo" width={150} height="auto" />
           <Heading as="h3" size="lg" color="#1C1C1C">
             Africa DAO
           </Heading>
@@ -52,8 +52,8 @@ const Footer = () => {
               Resources
             </Heading>
 
-            {resources.map((item) => (
-              <Text fontSize="lg" fontWeight="200">
+            {resources.map((item, i) => (
+              <Text fontSize="lg" fontWeight="200" key={i}>
                 <Link>{item.title}</Link>
               </Text>
             ))}
@@ -64,8 +64,8 @@ const Footer = () => {
               Foundation
             </Heading>
 
-            {foundation.map((item) => (
-              <Text fontSize="lg" fontWeight="200">
+            {foundation.map((item, i) => (
+              <Text fontSize="lg" fontWeight="200" key={i}>
                 <Link>{item.title}</Link>
               </Text>
             ))}
@@ -76,8 +76,8 @@ const Footer = () => {
               Developer
             </Heading>
 
-            {developers.map((item) => (
-              <Text fontSize="lg" fontWeight="200">
+            {developers.map((item, i) => (
+              <Text fontSize="lg" fontWeight="200" key={i}>
                 <Link>{item.title}</Link>
               </Text>
             ))}
@@ -89,8 +89,8 @@ const Footer = () => {
             </Heading>
 
             <Box display="flex">
-              {community.map((item) => (
-                <Text margin={2} fontSize="2xl">
+              {community.map((item, i) => (
+                <Text margin={2} fontSize="2xl" key={i}>
                   <Link display="inline" href={item.url} isExternal>
                     {item.icon}
                   </Link>
