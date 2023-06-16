@@ -96,11 +96,11 @@ const Footer = () => {
 
       <Flex justifyContent="space-between" wrap="wrap" mt="20" gap="5">
         <Text fontWeight="600">
-          <Link>Privacy Policy</Link>
+          <Link href="#">Privacy Policy</Link>
         </Text>
         <Text fontWeight="600">&copy; {currentYear} Celo Inc.</Text>
         <Text fontWeight="600">
-          <Link>Terms of Service</Link>
+          <Link href="#">Terms of Service</Link>
         </Text>
       </Flex>
     </Container>
