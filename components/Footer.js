@@ -1,7 +1,7 @@
 import { FaGithub, FaSlack, FaTelegramPlane, FaTwitter } from "react-icons/fa";
 import Image from "next/image";
 import Logo from "../img/image.png";
-import { Heading, Box, Text, Link } from "@chakra-ui/react";
+import { Heading, Box, Text, Link, Container, Flex } from "@chakra-ui/react";
 
 const resources = [
   { title: "WhitePaper", url: "#" },
@@ -30,93 +30,80 @@ const currentYear = date.getFullYear();
 
 const Footer = () => {
   return (
-    <footer style={{ backgroundColor: "#FCF951", padding: "20px" }}>
-      <Box w="100%">
-        <Box w="100%" display="flex" gap={5} justifyContent="flex-start">
+    <Container as="footer" maxWidth="8xl" bg="#FCF951" py="40px">
+      <Flex gap="4" wrap="wrap">
+        <Link href="#">
           <Image src={Logo} alt="celo" width={150} height="auto" />
-          <Heading as="h3" size="lg" color="#1C1C1C">
-            Africa DAO
+        </Link>
+        <Heading as="h3" size="lg" color="#1C1C1C">
+          Africa DAO
+        </Heading>
+      </Flex>
+
+      <Flex w="90%" mt="20" justifyContent="space-between" wrap="wrap" gap="5">
+        <Box>
+          <Heading as="h5" fontSize="xl" fontWeight="500">
+            Resources
           </Heading>
+
+          {resources.map((item, i) => (
+            <Text fontSize="lg" fontWeight="200" key={i}>
+              <Link>{item.title}</Link>
+            </Text>
+          ))}
         </Box>
 
-        <Box
-          w="95%"
-          display="flex"
-          justifyContent="center"
-          flexWrap="nowrap"
-          alignItems="flex-start"
-          marginTop="10"
-        >
-          <Box w="100%">
-            <Heading as="h5" fontSize="xl" fontWeight="500">
-              Resources
-            </Heading>
+        <Box>
+          <Heading as="h5" fontSize="xl" fontWeight="500">
+            Foundation
+          </Heading>
 
-            {resources.map((item, i) => (
-              <Text fontSize="lg" fontWeight="200" key={i}>
-                <Link>{item.title}</Link>
+          {foundation.map((item, i) => (
+            <Text fontSize="lg" fontWeight="200" key={i}>
+              <Link>{item.title}</Link>
+            </Text>
+          ))}
+        </Box>
+
+        <Box>
+          <Heading as="h5" fontSize="xl" fontWeight="500">
+            Developer
+          </Heading>
+
+          {developers.map((item, i) => (
+            <Text fontSize="lg" fontWeight="200" key={i}>
+              <Link>{item.title}</Link>
+            </Text>
+          ))}
+        </Box>
+
+        <Box>
+          <Heading as="h5" fontSize="xl" fontWeight="500">
+            Join the community
+          </Heading>
+
+          <Box display="flex">
+            {community.map((item, i) => (
+              <Text margin={2} fontSize="2xl" key={i}>
+                <Link display="inline" href={item.url} isExternal>
+                  {item.icon}
+                </Link>
               </Text>
             ))}
           </Box>
-
-          <Box w="100%">
-            <Heading as="h5" fontSize="xl" fontWeight="500">
-              Foundation
-            </Heading>
-
-            {foundation.map((item, i) => (
-              <Text fontSize="lg" fontWeight="200" key={i}>
-                <Link>{item.title}</Link>
-              </Text>
-            ))}
-          </Box>
-
-          <Box w="100%">
-            <Heading as="h5" fontSize="xl" fontWeight="500">
-              Developer
-            </Heading>
-
-            {developers.map((item, i) => (
-              <Text fontSize="lg" fontWeight="200" key={i}>
-                <Link>{item.title}</Link>
-              </Text>
-            ))}
-          </Box>
-
-          <Box w="100%">
-            <Heading as="h5" fontSize="xl" fontWeight="500">
-              Join the community
-            </Heading>
-
-            <Box display="flex">
-              {community.map((item, i) => (
-                <Text margin={2} fontSize="2xl" key={i}>
-                  <Link display="inline" href={item.url} isExternal>
-                    {item.icon}
-                  </Link>
-                </Text>
-              ))}
-            </Box>
-          </Box>
         </Box>
+      </Flex>
 
-        <Box
-          display="flex"
-          justifyContent="space-between"
-          flexWrap="nowrap"
-          alignItems="flex-start"
-          marginTop="20"
-        >
-          <Text fontWeight="600">
-            <Link>Privacy Policy</Link>
-          </Text>
-          <Text fontWeight="600">&copy; {currentYear} Celo Inc.</Text>
-          <Text fontWeight="600">
-            <Link>Terms of Service</Link>
-          </Text>
-        </Box>
-      </Box>
-    </footer>
+      <Flex justifyContent="space-between" wrap="wrap" mt="20" gap="5">
+        <Text fontWeight="600">
+          <Link>Privacy Policy</Link>
+        </Text>
+        <Text fontWeight="600">&copy; {currentYear} Celo Inc.</Text>
+        <Text fontWeight="600">
+          <Link>Terms of Service</Link>
+        </Text>
+      </Flex>
+    </Container>
   );
 };
 
