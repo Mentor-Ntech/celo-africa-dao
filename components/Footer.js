@@ -42,43 +42,43 @@ const Footer = () => {
 
       <Flex w="90%" mt="20" justifyContent="space-between" wrap="wrap" gap="5">
         <Box>
-          <Heading as="h5" fontSize="xl" fontWeight="500">
+          <Heading as="h5" fontSize="xl" fontWeight="400">
             Resources
           </Heading>
 
           {resources.map((item, i) => (
-            <Text fontSize="lg" fontWeight="200" key={i}>
+            <Text fontSize="lg" fontWeight="300" key={i}>
               <Link>{item.title}</Link>
             </Text>
           ))}
         </Box>
 
         <Box>
-          <Heading as="h5" fontSize="xl" fontWeight="500">
+          <Heading as="h5" fontSize="xl" fontWeight="400">
             Foundation
           </Heading>
 
           {foundation.map((item, i) => (
-            <Text fontSize="lg" fontWeight="200" key={i}>
+            <Text fontSize="lg" fontWeight="300" key={i}>
               <Link>{item.title}</Link>
             </Text>
           ))}
         </Box>
 
         <Box>
-          <Heading as="h5" fontSize="xl" fontWeight="500">
+          <Heading as="h5" fontSize="xl" fontWeight="400">
             Developer
           </Heading>
 
           {developers.map((item, i) => (
-            <Text fontSize="lg" fontWeight="200" key={i}>
+            <Text fontSize="lg" fontWeight="300" key={i}>
               <Link>{item.title}</Link>
             </Text>
           ))}
         </Box>
 
         <Box>
-          <Heading as="h5" fontSize="xl" fontWeight="500">
+          <Heading as="h5" fontSize="xl" fontWeight="400">
             Join the community
           </Heading>
 
@@ -95,11 +95,13 @@ const Footer = () => {
       </Flex>
 
       <Flex justifyContent="space-between" wrap="wrap" mt="20" gap="5">
-        <Text fontWeight="600">
+        <Text fontWeight="500" fontSize="lg">
           <Link href="#">Privacy Policy</Link>
         </Text>
-        <Text fontWeight="600">&copy; {currentYear} Celo Inc.</Text>
-        <Text fontWeight="600">
+        <Text fontWeight="500" fontSize="lg">
+          &copy; {currentYear} Celo Inc.
+        </Text>
+        <Text fontWeight="500" fontSize="lg">
           <Link href="#">Terms of Service</Link>
         </Text>
       </Flex>
