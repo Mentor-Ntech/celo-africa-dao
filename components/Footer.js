@@ -1,6 +1,7 @@
 import { FaGithub, FaSlack, FaTelegramPlane, FaTwitter } from "react-icons/fa";
 import Image from "next/image";
 import Logo from "../img/image.png";
+import NextLink from "next/link";
 import { Heading, Box, Text, Link, Container, Flex } from "@chakra-ui/react";
 
 const resources = [
@@ -32,17 +33,19 @@ const Footer = () => {
   return (
     <Container as="footer" maxWidth="8xl" bg="#FCF951" py="40px">
       <Flex gap="4" wrap="wrap">
-        <Link href="#">
-          <Image src={Logo} alt="celo" width={150} height="auto" />
+        <Link href="/">
+          <Image src={Logo} alt="celo" width={90} height="auto" />
         </Link>
-        <Heading as="h3" size="lg" color="#1C1C1C">
-          Africa DAO
-        </Heading>
+        <NextLink href="/">
+          <Heading as="h3" size="md" color="#1C1C1C">
+            Africa DAO
+          </Heading>
+        </NextLink>
       </Flex>
 
-      <Flex w="90%" mt="20" justifyContent="space-between" wrap="wrap" gap="5">
+      <Flex w="90%" mt="10" justifyContent="space-between" wrap="wrap" gap="5">
         <Box>
-          <Heading as="h5" fontSize="xl" fontWeight="400">
+          <Heading as="h5" fontSize="xl" fontWeight="500">
             Resources
           </Heading>
 
@@ -54,7 +57,7 @@ const Footer = () => {
         </Box>
 
         <Box>
-          <Heading as="h5" fontSize="xl" fontWeight="400">
+          <Heading as="h5" fontSize="xl" fontWeight="500">
             Foundation
           </Heading>
 
@@ -66,7 +69,7 @@ const Footer = () => {
         </Box>
 
         <Box>
-          <Heading as="h5" fontSize="xl" fontWeight="400">
+          <Heading as="h5" fontSize="xl" fontWeight="500">
             Developer
           </Heading>
 
@@ -78,7 +81,7 @@ const Footer = () => {
         </Box>
 
         <Box>
-          <Heading as="h5" fontSize="xl" fontWeight="400">
+          <Heading as="h5" fontSize="xl" fontWeight="500">
             Join the community
           </Heading>
 
