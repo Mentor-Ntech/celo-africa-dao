@@ -42,7 +42,7 @@ const Footer = () => {
 
       <Flex w="90%" mt="20" justifyContent="space-between" wrap="wrap" gap="5">
         <Box>
-          <Heading as="h5" fontSize="xl" fontWeight="400">
+          <Heading as="h5" fontSize="xl" fontWeight="500">
             Resources
           </Heading>
 
@@ -54,7 +54,7 @@ const Footer = () => {
         </Box>
 
         <Box>
-          <Heading as="h5" fontSize="xl" fontWeight="400">
+          <Heading as="h5" fontSize="xl" fontWeight="500">
             Foundation
           </Heading>
 
@@ -66,7 +66,7 @@ const Footer = () => {
         </Box>
 
         <Box>
-          <Heading as="h5" fontSize="xl" fontWeight="400">
+          <Heading as="h5" fontSize="xl" fontWeight="500">
             Developer
           </Heading>
 
@@ -78,7 +78,7 @@ const Footer = () => {
         </Box>
 
         <Box>
-          <Heading as="h5" fontSize="xl" fontWeight="400">
+          <Heading as="h5" fontSize="xl" fontWeight="500">
             Join the community
           </Heading>
 
