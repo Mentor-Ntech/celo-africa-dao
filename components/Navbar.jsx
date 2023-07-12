@@ -11,7 +11,7 @@ import {
   Container,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import Logo from "../img/image.png";
+import Logo from "../img/celo.svg";
 import NextLink from "next/link";
 // import {FiMenu} from 'react-icons/fi'
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
