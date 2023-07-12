@@ -1,6 +1,6 @@
 import { FaGithub, FaSlack, FaTelegramPlane, FaTwitter } from "react-icons/fa";
 import Image from "next/image";
-import Logo from "../img/image.png";
+import Logo from "../img/image.svg";
 import NextLink from "next/link";
 import { Heading, Box, Text, Link, Container, Flex } from "@chakra-ui/react";
 
