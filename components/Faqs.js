@@ -8,7 +8,6 @@ import {
   Flex,
   Heading
 } from "@chakra-ui/react";
-// import { AddIcon, MinusIcon } from "@chakra-ui/icons";
 import { AiOutlinePlusCircle, AiOutlineMinusCircle } from "react-icons/ai";
 
 const faqsData = [
