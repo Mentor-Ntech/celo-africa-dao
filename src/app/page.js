@@ -1,6 +1,6 @@
 'use client'
 import { Box } from '@chakra-ui/react'
-import About from '../../containers/About.js'
+import About from '../../components/About.js';
 
 const Home = () => {
   return (
