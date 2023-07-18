@@ -1,5 +1,5 @@
 // import Head from "next/head";
-import About from "../components/About";
+import About from '../components/About/About'
 
 // import Preloader from "../components/Preloader/preloader";
 // import Timer from "../components/Countdown/Timer";
@@ -50,5 +50,5 @@ export default function Home() {
       </Box> */}
       <About />
     </>
-  );
+  )
 }
