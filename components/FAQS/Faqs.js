@@ -68,7 +68,7 @@ const Faqs = () => {
                         )}
                         </AccordionButton>
                     </h2>
-                    <AccordionPanel pb={4} width="600px">
+                    <AccordionPanel pb={4}>
                         {item.answer}
                     </AccordionPanel>
                     </>
