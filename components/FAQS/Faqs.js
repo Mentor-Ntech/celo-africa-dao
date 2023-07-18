@@ -42,42 +42,42 @@ const Faqs = () => {
     <>
       <Flex
         as="faq"
-        bg="fbf6f1"
+        bg="#fbf6f1"
         py="20px"
-        px={{ base: "20px", sm: "60px", md: "100px" }}
+        px={{ base: "15px", sm: "80px", md: "120px", lg: "200px"}}
         flexDirection="column"
-      >
-        <Heading as="h2" size="md" textAlign="center" mb="40px">
-          General FAQs
-        </Heading>
-        {faqsData.map((item) => (
-          <div key={item.id}>
-          <Accordion allowMultiple>
-            <AccordionItem>
-              {({ isExpanded }) => (
-                <>
-                  <h2>
-                    <AccordionButton>
-                      <Box as="span" flex="1" textAlign="left" w="100%">
-                        {item.question}
-                      </Box>
-                      {isExpanded ? (
-                        <AiOutlineMinusCircle fontSize="12px" />
-                      ) : (
-                        <AiOutlinePlusCircle fontSize="12px" />
-                      )}
-                    </AccordionButton>
-                  </h2>
-                  <AccordionPanel pb={4} width="600px">
-                    {item.answer}
-                  </AccordionPanel>
-                </>
-              )}
-            </AccordionItem>
-          </Accordion>
-          </div>
+        >
+            <Heading as="h2" size="md" textAlign="center" mb="40px">
+            General FAQs
+            </Heading>
+            {faqsData.map((item) => (
+            <div key={item.id}>
+            <Accordion allowMultiple>
+                <AccordionItem>
+                {({ isExpanded }) => (
+                    <>
+                    <h2>
+                        <AccordionButton>
+                        <Box as="span" flex="1" textAlign="left" w="100%" p={0} m={0}>
+                            {item.question}
+                        </Box>
+                        {isExpanded ? (
+                            <AiOutlineMinusCircle fontSize="12px" />
+                        ) : (
+                            <AiOutlinePlusCircle fontSize="12px" />
+                        )}
+                        </AccordionButton>
+                    </h2>
+                    <AccordionPanel pb={4} width="600px">
+                        {item.answer}
+                    </AccordionPanel>
+                    </>
+                )}
+                </AccordionItem>
+            </Accordion>
+            </div>
 
-        ))}
+            ))}
       </Flex>
     </>
   );

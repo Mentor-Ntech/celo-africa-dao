@@ -1,4 +1,4 @@
-import Faqs from "../components/Faqs";
+import Faqs from "../components/FAQS/Faqs";
 
 const Home = () => {
   return (
