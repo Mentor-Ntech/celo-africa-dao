@@ -13,9 +13,9 @@ import Link from "next/link";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 import Image from "next/image";
-import Coin from "../img/coin.svg";
-import Friend from "../img/friend.svg";
-import Feed from "../img/feedback.svg";
+import Coin from "../../img/coin.svg";
+import Friend from "../../img/friend.svg";
+import Feed from "../../img/feedback.svg";
 
 const ChakraBox = chakra(motion.div, {
   shouldForwardProp: (prop) =>
@@ -50,7 +50,12 @@ const About = () => {
           <Image src={Coin} />
         </ChakraBox>
 
-        <Flex as="div" gap={3} justifyContent="flex-start" flexDir="column" width="700px"
+        <Flex
+          as="div"
+          gap={3}
+          justifyContent="flex-start"
+          flexDir="column"
+          width="700px"
         >
           <Heading as="h2" fontSize="22px">
             What is Celo Africa DAO?
@@ -76,15 +81,20 @@ const About = () => {
         </Flex>
       </Box>
       <Box
-         wrap={{ base: "wrap" }}
+        wrap={{ base: "wrap" }}
         display="flex"
         gap={8}
         justifyContent="center"
         alignItems="center"
         mt="20px"
-
       >
-        <Flex as="div" gap={3} justifyContent="flex-start" flexDir="column" width="700px">
+        <Flex
+          as="div"
+          gap={3}
+          justifyContent="flex-start"
+          flexDir="column"
+          width="700px"
+        >
           <Heading as="h2" fontSize="22px">
             How does the DAO work?
           </Heading>
@@ -113,7 +123,7 @@ const About = () => {
       </Box>
 
       <Box
-         wrap={{ base: "wrap" }}
+        wrap={{ base: "wrap" }}
         display="flex"
         gap={8}
         justifyContent="center"
@@ -124,7 +134,13 @@ const About = () => {
           <Image src={Feed} />
         </ChakraBox>
 
-        <Flex as="div" gap={3} justifyContent="flex-start" flexDir="column" width="700px">
+        <Flex
+          as="div"
+          gap={3}
+          justifyContent="flex-start"
+          flexDir="column"
+          width="700px"
+        >
           <Heading as="h2" fontSize="22px">
             How to be a part of the DAO?
           </Heading>
