@@ -76,6 +76,7 @@ export default function Navbar() {
       >
         <IconButton
           size="md"
+          colo
           icon={<HamburgerIcon />}
           display={["flex", "flex", "flex", "none"]}
           aria-label="Open Menu"
@@ -85,7 +86,7 @@ export default function Navbar() {
         {toggle && (
           <Box
             as="div"
-            bg="#E6E3D5"
+            bg="#FCF951"
             w="100%"
             h="100vh"
             p="5"
