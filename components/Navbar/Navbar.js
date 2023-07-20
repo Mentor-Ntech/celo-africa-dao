@@ -36,6 +36,7 @@ export default function Navbar() {
       alignItems="center"
       position="fixed"
       width="100%"
+      boxShadow="xl"
     >
       <HStack>
         <Link href="/">
@@ -76,8 +77,8 @@ export default function Navbar() {
       >
         <IconButton
           size="md"
-          colo
-          icon={<HamburgerIcon />}
+          colorScheme="inherit"
+          icon={<HamburgerIcon color="black" w={8} h={8}/>}
           display={["flex", "flex", "flex", "none"]}
           aria-label="Open Menu"
           onClick={() => setToggle(true)}
@@ -102,7 +103,8 @@ export default function Navbar() {
           >
             <IconButton
               size="md"
-              icon={<CloseIcon />}
+              icon={<CloseIcon color="black" />}
+              colorScheme="inherit"
               aria-label={"Close Menu"}
               onClick={() => setToggle(false)}
             />
