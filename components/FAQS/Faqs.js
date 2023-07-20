@@ -47,7 +47,7 @@ const Faqs = () => {
         px={{ base: "15px", sm: "80px", md: "120px", lg: "200px"}}
         flexDirection="column"
         >
-            <Heading as="h2" size="md" textAlign="center" mb="40px">
+            <Heading as="h2" fontSize="40px" fontWeight="700" fontFamily="PT-serif" textAlign="center" mb="138px">
             General FAQs
             </Heading>
             {faqsData.map((item) => (
@@ -58,7 +58,7 @@ const Faqs = () => {
                     <>
                     <h2>
                         <AccordionButton>
-                        <Box as="span" flex="1" textAlign="left" w="100%" p={0} m={0}>
+                        <Box as="span" flex="1" fontSize="32px" fontWeight="400" fontFamily= "PT-serif" textAlign="left" w="100%" p={0} m={0}>
                             {item.question}
                         </Box>
                         {isExpanded ? (
@@ -68,7 +68,7 @@ const Faqs = () => {
                         )}
                         </AccordionButton>
                     </h2>
-                    <AccordionPanel pb={4}>
+                    <AccordionPanel pb={4} fontSize="20px" fontWeight="200" fontFamily="sans-serif"> 
                         {item.answer}
                     </AccordionPanel>
                     </>
