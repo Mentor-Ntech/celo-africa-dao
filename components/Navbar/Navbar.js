@@ -2,12 +2,12 @@ import {
   Box,
   Flex,
   Link,
+  Text,
   Heading,
   HStack,
   IconButton,
   VStack,
   Spacer,
-  
 } from "@chakra-ui/react";
 import Image from "next/image";
 import Logo from "../../img/celo.svg";
@@ -40,10 +40,10 @@ export default function Navbar() {
     >
       <HStack>
         <Link href="/">
-          <Image src={Logo} alt="celo" width={90} height="auto" />
+          <Image src={Logo} alt="celo" />
         </Link>
 
-        <Heading as="h3" size="md">
+        <Heading as="h3" size="lg">
           <NextLink href="/home" passHref>
             Africa DAO
           </NextLink>
@@ -61,7 +61,11 @@ export default function Navbar() {
       >
         {navList.map((item, index) => (
           <Box key={index}>
-            <Link href={item.path}>{item.title}</Link>
+            <Text >
+              <Link href={item.path} fontSize="17" fontWeight="400">
+                {item.title}
+              </Link>
+            </Text>
           </Box>
         ))}
       </HStack>
@@ -78,7 +82,7 @@ export default function Navbar() {
         <IconButton
           size="md"
           colorScheme="inherit"
-          icon={<HamburgerIcon color="black" w={8} h={8}/>}
+          icon={<HamburgerIcon color="black" w={8} h={8} />}
           display={["flex", "flex", "flex", "none"]}
           aria-label="Open Menu"
           onClick={() => setToggle(true)}
