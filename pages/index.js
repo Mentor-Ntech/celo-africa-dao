@@ -1,4 +1,5 @@
 // import Head from "next/head";
+import Faqs from '../components/FAQS/Faqs'
 // import Preloader from "../components/Preloader/preloader";
 // import Timer from "../components/Countdown/Timer";
 // import { Box } from "@chakra-ui/react";
@@ -50,6 +51,7 @@ export default function Home() {
         <Preloader />
       </Box> */}
       <About />
+      <Faqs/>
       <Footer />
     </>
   );
