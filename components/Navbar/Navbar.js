@@ -36,7 +36,7 @@ export default function Navbar() {
       alignItems="center"
       position="fixed"
       width="100%"
-      boxShadow="xl"
+      // boxShadow="xl"
     >
       <HStack>
         <Link href="/">

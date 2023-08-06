@@ -40,7 +40,7 @@ const Footer = () => {
           <Heading as="h3" size="md" color="#1C1C1C">
             Africa DAO
           </Heading>
-        </NextLink>
+        </NextLink> 
       </Flex>
 
       <Flex w="90%" mt="10" justifyContent="space-between" wrap="wrap" gap="5">
