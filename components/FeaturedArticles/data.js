@@ -6,8 +6,8 @@ export const labelData = [
 
 export const blogData = [
   {
-    img: require("../../img/article1.svg"),
-    avatar: require("../../img/author.svg"),
+    articleImg: require("../../img/article1.svg"),
+    authorAvatar: require("../../img/author.svg"),
     author: "Poppy M",
     datePosted: "Feb 18th, 20",
     headline: "How to spend your money in 2022 and beyond",
@@ -17,8 +17,8 @@ export const blogData = [
     timeToRead: "3 mins read",
   },
   {
-    img: require("../../img/article2.svg"),
-    avatar: require("../../img/author.svg"),
+    articleImg: require("../../img/article2.svg"),
+    authorAvatar: require("../../img/author.svg"),
     author: "Poppy M",
     datePosted: "Feb 18th, 20",
     headline: "How to spend your money in 2022 and beyond",
@@ -28,8 +28,8 @@ export const blogData = [
     timeToRead: "3 mins read",
   },
   {
-    img: require("../../img/article3.svg"),
-    avatar: require("../../img/author.svg"),
+    articleImg: require("../../img/article3.svg"),
+    authorAvatar: require("../../img/author.svg"),
     author: "Poppy M",
     datePosted: "Feb 18th, 20",
     headline: "How to spend your money in 2022 and beyond",
@@ -64,5 +64,35 @@ export const eventsData = [
     description: "Borem ipsum dolor sit amet Borem ipsum dolor sit amet",
     headline: "Outstanding Celo Event in Kenya",
     readmoreLink: "/",
+  },
+];
+
+export const videosData = [
+  {
+    videoLink: "https://www.youtube.com/embed/mDXLU8uvVAM",
+    authorAvatar: require("../../img/video-author.svg"),
+    authorName: "John Henry",
+    datePosted: "Feb, 16th 2023",
+    title: "Celo africa dao event in Kenya.",
+    views: "736k views",
+    daysAgo: "5 days ago",
+  },
+  {
+    videoLink: "https://www.youtube.com/embed/mDXLU8uvVAM",
+    authorAvatar: require("../../img/video-author.svg"),
+    authorName: "John Henry",
+    datePosted: "Feb, 16th 2023",
+    title: "Celo africa dao event in Kenya.",
+    views: "736k views",
+    daysAgo: "5 days ago",
+  },
+  {
+    videoLink: "https://www.youtube.com/embed/mDXLU8uvVAM",
+    authorAvatar: require("../../img/video-author.svg"),
+    authorName: "John Henry",
+    datePosted: "Feb, 16th 2023",
+    title: "Celo africa dao event in Kenya.",
+    views: "736k views",
+    daysAgo: "5 days ago",
   },
 ];

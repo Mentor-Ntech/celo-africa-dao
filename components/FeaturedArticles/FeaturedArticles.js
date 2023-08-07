@@ -2,7 +2,7 @@ import "../../styles/styles.css";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 
-import { labelData, blogData, eventsData } from "./data";
+import { labelData, blogData, eventsData, videosData } from "./data";
 
 import {
   Container,
@@ -49,6 +49,7 @@ const FeaturedArticles = () => {
         <TabPanels>
           {/* Blog Tap Panel */}
           <TabPanel
+            as="div"
             display="flex"
             flexDir="column"
             justifyContent="center"
@@ -56,6 +57,7 @@ const FeaturedArticles = () => {
             gap="70px"
           >
             <Flex
+              as="div"
               gap="70px"
               wrap="wrap"
               justifyContent="center"
@@ -65,16 +67,23 @@ const FeaturedArticles = () => {
             >
               {blogData.map((blog, i) => (
                 <Box
+                  as="div"
                   key={i}
                   h={{ base: "467px", sm: "592px" }}
                   w={{ base: "247px", sm: "427px" }}
                 >
                   <List spacing="3">
                     <ListItem as="li">
-                      <Image src={blog.img} alt="Article" />
+                      <Image src={blog.articleImg} alt="Article" />
                     </ListItem>
                     <Flex gap="8px">
-                      <Image src={blog.avatar} alt="Author" />
+                      <ListItem as="li" h="25px" w="25px">
+                        <Image
+                          src={blog.authorAvatar}
+                          alt="Author"
+                          style={{ borderRadius: "50%" }}
+                        />
+                      </ListItem>
                       <Text
                         fontFamily="sofian-sans"
                         fontSize="16px"
@@ -178,14 +187,15 @@ const FeaturedArticles = () => {
           </TabPanel>
 
           {/* Events Tab Panel */}
-          <TabPanel>
+          <TabPanel as="div">
             <Flex
+              as="div"
               columnGap="70px"
               rowGap="20px"
               wrap="wrap"
               justifyContent="center"
               alignItems="center"
-              p="10px"
+              pl="10px"
             >
               {eventsData.map((event, i) => (
                 <List
@@ -199,7 +209,7 @@ const FeaturedArticles = () => {
                   bgColor={event.bgColor}
                 >
                   <ListItem as="li">
-                    <Image src={event.eventImg} />
+                    <Image src={event.eventImg} alt="event" />
                   </ListItem>
                   <ListItem as="li">
                     <Text
@@ -216,7 +226,7 @@ const FeaturedArticles = () => {
                   </ListItem>
                   <ListItem as="li" bgColor={event.bgColor}>
                     <Text position="relative" top={{ base: "-95", sm: "-121" }}>
-                      <Image src={event.eventBg} />
+                      <Image src={event.eventBg} alt="event background" />
                     </Text>
                     <Text
                       color="black"
@@ -253,7 +263,114 @@ const FeaturedArticles = () => {
               ))}
             </Flex>
           </TabPanel>
-          <TabPanel></TabPanel>
+
+          {/* Video Tap Panel */}
+
+          <TabPanel
+            as="div"
+            display="flex"
+            flexDir="column"
+            justifyContent="center"
+            alignItems="center"
+            gap="103px"
+          >
+            <Flex
+              as="div"
+              padding="34px"
+              wrap="wrap"
+              columnGap="70px"
+              rowGap="40px"
+              justifyContent="center"
+              alignItems="center"
+            >
+              {videosData.map((video, index) => (
+                <List
+                  as="ul"
+                  h="auto"
+                  w={{ base: "212px", sm: "283px", md: "514px" }}
+                  key={index}
+                >
+                  <ListItem
+                    as="li"
+                    borderRadius="45px"
+                    overflow="hidden"
+                    w="100%"
+                    h={{ base: "249px", md: "399px" }}
+                    mb="25px"
+                  >
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src={video.videoLink}
+                      title="Celo Spark: Tokenized Carbon Credits with Toucan"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullscreen
+                    ></iframe>
+                  </ListItem>
+                  <ListItem as="li">
+                    <Flex as="ul" listStyleType="none" columnGap="7px">
+                      <ListItem h="63px" w="63px">
+                        <Image
+                          src={video.authorAvatar}
+                          alt="video author"
+                          style={{ borderRadius: "50%" }}
+                        />
+                      </ListItem>
+                      <ListItem>
+                        <Flex
+                          columnGap="10px"
+                          fontFamily="sofian-sans"
+                          fontSize={{ base: "12", sm: "16px" }}
+                          fontWeight="300"
+                        >
+                          <Text color="#1E1E1E">{video.authorName}</Text>
+                          <Text color="#161616">Feb, 16th 2023</Text>
+                        </Flex>
+                        <Text
+                          fontFamily="PT-Serif"
+                          fontSize={{ base: "14px", sm: "18px" }}
+                          fontWeight="700"
+                        >
+                          {video.title}
+                        </Text>
+                        <Flex
+                          columnGap="10px"
+                          fontFamily="sofian-sans"
+                          fontSize={{ base: "12", sm: "16px" }}
+                          fontWeight="300"
+                        >
+                          <Text color="#1E1E1E">{video.views}</Text>
+                          <Text color="#161616">{video.daysAgo}</Text>
+                        </Flex>
+                      </ListItem>
+                    </Flex>
+                  </ListItem>
+                </List>
+              ))}
+            </Flex>
+
+            {/* See More Button */}
+            <Box
+              as="button"
+              h="46px"
+              w="168px"
+              p="10px"
+              transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
+              bg="transparent"
+              _hover={{ bg: "#FFFFFF" }}
+              color="#1C1C1C"
+              fontFamily="sofia-sans"
+              fontSize="24px"
+              fontWeight="400"
+              borderRadius="60px"
+              border="1px solid #676767"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <Link href="/">See More</Link>
+            </Box>
+          </TabPanel>
         </TabPanels>
       </Tabs>
     </Container>
