@@ -1,3 +1,9 @@
+import "../../styles/styles.css";
+import Image from "next/image";
+import { FaArrowRight } from "react-icons/fa";
+
+import { labelData, blogData, eventsData } from "./data";
+
 import {
   Container,
   Heading,
@@ -7,70 +13,17 @@ import {
   TabPanels,
   TabList,
   TabIndicator,
-  SimpleGrid,
   Box,
   List,
   ListItem,
   Text,
   Flex,
-  Button,
+  Link,
 } from "@chakra-ui/react";
-import Image from "next/image";
-import Author from "../../img/author.svg";
-import Link from "next/link";
-
-const labelData = [
-  { label: "Blogs" },
-  { label: "Events" },
-  { label: "Videos" },
-];
-
-const contentData = [
-  {
-    img: require("../../img/article1.svg"),
-    avatar: require("../../img/author.svg"),
-    author: "Poppy M",
-    datePosted: "Feb 18th, 20",
-    headline: "How to spend your money in 2022 and beyond",
-    lead: " Cryptocurrencies like Bitcoin, XRP, and Eth have become increasingly popular over the past few years. They're also becoming an important part of our...",
-    button1: "Africa Dao news",
-    button2: "Project utility",
-    timeToRead: "3 mins read",
-  },
-  {
-    img: require("../../img/article2.svg"),
-    avatar: require("../../img/author.svg"),
-    author: "Poppy M",
-    datePosted: "Feb 18th, 20",
-    headline: "How to spend your money in 2022 and beyond",
-    lead: " Cryptocurrencies like Bitcoin, XRP, and Eth have become increasingly popular over the past few years. They're also becoming an important part of our...",
-    button1: "Africa Dao news",
-    button2: "Project utility",
-    timeToRead: "3 mins read",
-  },
-  {
-    img: require("../../img/article3.svg"),
-    avatar: require("../../img/author.svg"),
-    author: "Poppy M",
-    datePosted: "Feb 18th, 20",
-    headline: "How to spend your money in 2022 and beyond",
-    lead: " Cryptocurrencies like Bitcoin, XRP, and Eth have become increasingly popular over the past few years. They're also becoming an important part of our...",
-    button1: "Africa Dao news",
-    button2: "Project utility",
-    timeToRead: "3 mins read",
-  },
-];
 
 const FeaturedArticles = () => {
   return (
-    <Container
-      as="section"
-      bg="#fbf6f1"
-      maxWidth="auto"
-      pl="56px"
-      pt="60px"
-      pb="120px"
-    >
+    <Container as="section" bg="#fbf6f1" maxWidth="auto" pt="60px" pb="120px">
       <Heading
         as="h2"
         textAlign="center"
@@ -81,10 +34,10 @@ const FeaturedArticles = () => {
       >
         Featured Articles
       </Heading>
-      <Tabs borderColor="#fbf6f1">
+      <Tabs as="div" borderColor="#fbf6f1">
         <TabList fontFamily="Poppins" fontSize="16px" fontWeight="400">
-          {labelData.map((label) => (
-            <Tab>{label.label}</Tab>
+          {labelData.map((label, i) => (
+            <Tab key={i}>{label.label}</Tab>
           ))}
         </TabList>
         <TabIndicator
@@ -94,125 +47,213 @@ const FeaturedArticles = () => {
           borderRadius="1px"
         />
         <TabPanels>
-          <TabPanel>
+          {/* Blog Tap Panel */}
+          <TabPanel
+            display="flex"
+            flexDir="column"
+            justifyContent="center"
+            alignItems="center"
+            gap="70px"
+          >
             <Flex
               gap="70px"
               wrap="wrap"
               justifyContent="center"
               alignItems="center"
               p="10px"
+              id="blogCard"
             >
-              {contentData.map((content, i) => (
-                <Box h="592px" w="427px">
+              {blogData.map((blog, i) => (
+                <Box
+                  key={i}
+                  h={{ base: "467px", sm: "592px" }}
+                  w={{ base: "247px", sm: "427px" }}
+                >
                   <List spacing="3">
-                    <ListItem>
-                      <Image src={content.img} alt="Article" />
+                    <ListItem as="li">
+                      <Image src={blog.img} alt="Article" />
                     </ListItem>
                     <Flex gap="8px">
-                      <Image src={content.avatar} alt="Author" />
+                      <Image src={blog.avatar} alt="Author" />
                       <Text
                         fontFamily="sofian-sans"
                         fontSize="16px"
                         fontWeight="700"
                       >
-                        {content.author}
+                        {blog.author}
                       </Text>
                       <Text
                         fontFamily="sofian-sans"
                         fontSize="16px"
                         fontWeight="200"
                       >
-                        {content.datePosted}
+                        {blog.datePosted}
                       </Text>
                     </Flex>
-                    <ListItem>
+                    <ListItem as="li">
                       <Text
                         fontFamily="PT-sherif"
                         fontSize="20px"
                         fontWeight="700"
                       >
-                        {content.headline}
+                        {blog.headline}
                       </Text>
                     </ListItem>
-                    <ListItem>
+                    <ListItem as="li">
                       <Text
                         fontFamily="PT-sherif"
                         fontSize="16px"
                         fontWeight="400"
                       >
-                        {content.lead}
+                        {blog.lead}
                       </Text>
                     </ListItem>
-                    <Flex alignItems="center" gap="4">
+                    <Flex alignItems="center" gap="1">
                       <Box
                         as="button"
                         h="28px"
-                        w="121px"
+                        w={{ base: "76px", sm: "87px", md: "121px" }}
                         transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
                         bg="#1A0329"
                         borderColor="#ccd0d5"
                         _hover={{ bg: "#FFFFFF", color: "#1c1a1a" }}
                         color="#F7F7F7"
                         fontFamily="Poppins"
-                        fontSize="16px"
+                        fontSize={{ base: "10px", sm: "12px", md: "16px" }}
                         fontWeight="300"
                         borderRadius="100px"
                       >
-                        <Link href="/">{content.button1}</Link>
+                        <Link href="/">{blog.button1}</Link>
                       </Box>
                       <Box
                         as="button"
                         h="28px"
-                        w="121px"
+                        w={{ base: "76px", sm: "87px", md: "121px" }}
                         transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
                         bg="#1A0329"
                         borderColor="#ccd0d5"
                         _hover={{ bg: "#FFFFFF", color: "#1c1a1a" }}
                         color="#F7F7F7"
                         fontFamily="Poppins"
-                        fontSize="16px"
+                        fontSize={{ base: "10px", sm: "12px", md: "16px" }}
                         fontWeight="300"
                         borderRadius="100px"
                       >
-                        <Link href="/">{content.button2}</Link>
+                        <Link href="/">{blog.button2}</Link>
                       </Box>
                       <Text
                         fontFamily="Poppins"
-                        fontSize="18px"
+                        fontSize={{ base: "12px", sm: "14px", md: "16px" }}
                         fontWeight="300"
                       >
-                        {content.timeToRead}
+                        {blog.timeToRead}
                       </Text>
                     </Flex>
                   </List>
                 </Box>
               ))}
+            </Flex>
 
-              <Box
-                as="button"
-                h="46px"
-                w="168px"
-                p="10px"
-                transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
-                bg="transparent"
-                borderColor="#ccd0d5"
-                _hover={{ bg: "#FFFFFF" }}
-                color="#1C1C1C"
-                fontFamily="sofia-sans"
-                fontSize="24px"
-                fontWeight="400"
-                borderRadius="60px"
-                border="1px solid #676767"
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-              >
-                <Link href="/">See More</Link>
-              </Box>
+            <Box
+              as="button"
+              h="46px"
+              w="168px"
+              p="10px"
+              transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
+              bg="transparent"
+              borderColor="#ccd0d5"
+              _hover={{ bg: "#FFFFFF" }}
+              color="#1C1C1C"
+              fontFamily="sofia-sans"
+              fontSize="24px"
+              fontWeight="400"
+              borderRadius="60px"
+              border="1px solid #676767"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <Link href="/">See More</Link>
+            </Box>
+          </TabPanel>
+
+          {/* Events Tab Panel */}
+          <TabPanel>
+            <Flex
+              columnGap="70px"
+              rowGap="20px"
+              wrap="wrap"
+              justifyContent="center"
+              alignItems="center"
+              p="10px"
+            >
+              {eventsData.map((event, i) => (
+                <List
+                  as="ul"
+                  key={i}
+                  border="1px solid black"
+                  overflow="hidden"
+                  h="auto"
+                  w="427px"
+                  borderRadius="30px"
+                  bgColor={event.bgColor}
+                >
+                  <ListItem as="li">
+                    <Image src={event.eventImg} />
+                  </ListItem>
+                  <ListItem as="li">
+                    <Text
+                      color="#F7F7F7"
+                      fontFamily="PT-serif"
+                      fontWeight="700"
+                      fontSize={{ base: "16px", sm: "20px" }}
+                      pos="relative"
+                      top={{ base: "-32", sm: "-40" }}
+                      mx="20px"
+                    >
+                      {event.description}
+                    </Text>
+                  </ListItem>
+                  <ListItem as="li" bgColor={event.bgColor}>
+                    <Text position="relative" top={{ base: "-95", sm: "-121" }}>
+                      <Image src={event.eventBg} />
+                    </Text>
+                    <Text
+                      color="black"
+                      fontFamily="PT-serif"
+                      fontWeight="700"
+                      fontSize={{ base: "16px", sm: "20px" }}
+                      m="20px"
+                    >
+                      {event.headline}
+                    </Text>
+                    <Text
+                      display="flex"
+                      justifyContent="space-between"
+                      alignItems="center"
+                      mt={2}
+                      m="20px"
+                      pb="40px"
+                      href="/"
+                    >
+                      <Link
+                        href={event.readmoreLink}
+                        fontFamily="sans-serif"
+                        fontWeight="700"
+                        fontSize={{ base: "16px", sm: "20px" }}
+                      >
+                        Read More
+                      </Link>
+                      <Link href={"/"}>
+                        <FaArrowRight />
+                      </Link>
+                    </Text>
+                  </ListItem>
+                </List>
+              ))}
             </Flex>
           </TabPanel>
-          <TabPanel>22222</TabPanel>
-          <TabPanel>33333</TabPanel>
+          <TabPanel></TabPanel>
         </TabPanels>
       </Tabs>
     </Container>
