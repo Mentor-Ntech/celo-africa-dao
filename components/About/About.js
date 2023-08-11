@@ -6,7 +6,7 @@ import {
   chakra,
   shouldForwardProp,
   Box,
-  Button
+  Button,
 } from "@chakra-ui/react";
 import { motion, isValidMotionProp } from "framer-motion";
 import Link from "next/link";
@@ -18,12 +18,13 @@ import Friend from "../../img/friend.svg";
 import Feed from "../../img/feedback.svg";
 
 const ChakraBox = chakra(motion.div, {
-  shouldForwardProp: prop => isValidMotionProp(prop) || shouldForwardProp(prop)
+  shouldForwardProp: (prop) =>
+    isValidMotionProp(prop) || shouldForwardProp(prop),
 });
 
 const About = () => {
   return (
-    <Container as="section" maxW="8xl" bg="#FBF6F1" py="20px" px="15px">
+    <Container as="section" maxW="auto" bg="#FBF6F1" py="20px" px="15px">
       <Box
         wrap={{ base: "wrap" }}
         display="flex"
@@ -36,13 +37,13 @@ const About = () => {
           animate={{
             scale: [1, 1.2, 1.2, 1, 1],
             rotate: [0, 0, 270, 270, 0],
-            borderRadius: ["20%", "20%", "50%", "50%", "20%"]
+            borderRadius: ["20%", "20%", "50%", "50%", "20%"],
           }}
           transition={{
             duration: 3,
             ease: "easeInOut",
             repeat: Infinity,
-            repeatType: "loop"
+            repeatType: "loop",
           }}
           display={["none", "none", "flex", "flex"]}
         >
