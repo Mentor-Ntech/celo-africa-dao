@@ -1,5 +1,5 @@
 // import Head from "next/head";
-import Faqs from '../components/FAQS/Faqs'
+import Faqs from "../components/FAQS/Faqs";
 // import Preloader from "../components/Preloader/preloader";
 // import Timer from "../components/Countdown/Timer";
 // import { Box } from "@chakra-ui/react";
@@ -7,6 +7,7 @@ import Faqs from '../components/FAQS/Faqs'
 import About from "../components/About/About";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
+import FeaturedArticles from "../components/FeaturedArticles/FeaturedArticles";
 // import "../styles/styles.css";
 
 export default function Home() {
@@ -53,7 +54,8 @@ export default function Home() {
       </Box> */}
       <Navbar />
       <About />
-      <Faqs/>
+      <FeaturedArticles />
+      <Faqs />
       <Footer />
     </>
   );
