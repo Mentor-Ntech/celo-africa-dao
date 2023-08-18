@@ -8,6 +8,7 @@ import About from "../components/About/About";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import FeaturedArticles from "../components/FeaturedArticles/FeaturedArticles";
+import Hero from "../components/Hero/Hero";
 // import "../styles/styles.css";
 
 export default function Home() {
@@ -53,6 +54,7 @@ export default function Home() {
         <Preloader />
       </Box> */}
       <Navbar />
+      <Hero />
       <About />
       <FeaturedArticles />
       <Faqs />
