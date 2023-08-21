@@ -31,13 +31,15 @@ import {
         bg="#FBF6F1"
         pl={{base: "21px", sm:"40px", md:"75px"}}
         pt={{base: "94px", sm:"99px", md:"148px"}} 
-        pr="112px"
         flexDir="row"
-        columnGap="239.63px"
+        // columnGap="263.63px"
   
         // display={["flex", "flex", "flex", "flex"]}
       >
       <Box
+      width="688.31px"
+
+      
       //  mt={{base: "64px", sm:"30em", md:"148px"}} 
       >
         <Heading
@@ -56,12 +58,14 @@ import {
         <Text
           as="p"
           color="#1C1C1C"
+          // width="661px"
           fontFamily="Sofia Sans"
           fontSize={{ base:"18px", sm:"22px", md:"32px",}}
           fontWeight="300"
           lineHeight="normal"
           fontStyle="normal"
           mb={{base: "29px", sm:"20px", md:"72px",}}
+          columnGap="290.93px"
         >
           Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis.
@@ -72,23 +76,24 @@ import {
           bg="#FCF951"
           // width="429px"
           borderRadius="60px"
-          height={{base: "48px", sm:"55px", md:"90px"}}
+          height={{base: "48px", sm:"55px", md:"60px"}}
           padding="10px"
-          columnGap="15px"
+          columnGap="5px"
           justify-content="center"
           align-items="center"
           fontSize={{base: "16px", md:"24px"}}
           fontFamily="Sofia Sans"
           fontWeight="400px"
-          w={{base: "246px", md:"429px"}}
+          w={{base: "246px", md:"329px"}}
           mb={{base: "58px", sm:"125px", md:"148px"}}
+          
   
         >
           <Link href="/">Join the community</Link>
         </Button>
       </Box>
   
-        <ChakraBox
+        <ChakraBox width="595px"
         // boxSize={{base: "700", md: "2000px"}} 
         display={["none", "none", "none", "flex"]} flexDir="column">
         <Image src={HeroImg} />
