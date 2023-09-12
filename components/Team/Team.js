@@ -1,4 +1,3 @@
-
 import {
   Heading,
   Box,
@@ -14,7 +13,7 @@ import Linkedin from "../../img/linkedin.svg";
 import { MdOutlineArrowBackIos } from "react-icons/md";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { useState } from "react";
-import "../../styles/styles.css"
+import "../../styles/styles.css";
 
 const teamMember = [
   {
@@ -69,7 +68,7 @@ const Team = () => {
 
   return (
     <Container
-    id="team-section"
+      id="team-section"
       as="footer"
       maxW="auto"
       bg="#1A0329"
@@ -79,7 +78,11 @@ const Team = () => {
       color="#F7F7F7"
     >
       <Box textAlign="center" fontFamily="PT Serif">
-        <Heading as="h2" fontSize={{ base: "22px", md: "40px" }} fontWeight="700">
+        <Heading
+          as="h2"
+          fontSize={{ base: "22px", md: "40px" }}
+          fontWeight="700"
+        >
           Meet Our Team
         </Heading>
         <Text
@@ -213,4 +216,3 @@ const Team = () => {
 };
 
 export default Team;
-
