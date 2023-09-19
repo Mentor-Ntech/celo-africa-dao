@@ -74,7 +74,6 @@ const Team = () => {
       bg="#1A0329"
       pt={{ base: "62px", lg: "72px" }}
       pb="139px"
-      px={{ base: "19px", md: "65px" }}
       color="#F7F7F7"
     >
       <Box textAlign="center" fontFamily="PT Serif">
@@ -96,11 +95,11 @@ const Team = () => {
       </Box>
 
       <Flex
-        display={{ base: "none", xl: "flex" }}
-        mx="65px"
-        gap="31px"
-        mt="189px"
-        columnGap={{ sm: "172px" }}
+        display={{ base: "none", md: "flex" }}
+        mx="35px"
+        gap="61px"
+        mt="129px"
+        columnGap={{ sm: "42px" }}
         wrap="wrap"
         justifyContent="center"
         alignItems="center"
@@ -115,15 +114,18 @@ const Team = () => {
             alignItems="center"
             fontWeight="400"
           >
-            <Box as="div" w="376px" h="376px">
+            <Box as="div"
+             >
               <Image
                 src={member.img}
                 alt="Team member"
-                style={{ borderRadius: "50%" }}
+                style={{ borderRadius: "50%", height: "200px", width: "200px" } }
               />
             </Box>
 
-            <Heading mt="13px" fontFamily="PT serif" fontSize="28px">
+            <Heading 
+            mt="13px"
+             fontFamily="PT serif" fontSize="28px">
               {member.name}
             </Heading>
             <Text
@@ -148,7 +150,7 @@ const Team = () => {
 
       {/* For Phones */}
       <Flex
-        display={{ base: "flex", xl: "none" }}
+        display={{ base: "flex", md: "none" }}
         flexDir="column"
         mt="90px"
         columnGap={{ sm: "172px" }}
