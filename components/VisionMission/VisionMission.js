@@ -35,12 +35,9 @@ const VisionMission = () => {
           </Heading>
 
           <Text fontSize="24px" color="#fff" fontFamily="sofia-sans">
-            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-            lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis
-            condimentum ac, vestibulum eu nisl.
+            The connectedness of individuals from different background working together to achieve the same
+            mission of a healthy ecosystem where everyone can thrive irrespective of their experience is the kind of community
+            we envisage to build in Celo Africa DAO.
           </Text>
 
           <Button
@@ -75,17 +72,18 @@ const VisionMission = () => {
             </Heading>
 
             <Text fontSize="24px" color="#fff" fontFamily="Sofia Sans">
-              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis. Class
-              aptent taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-              lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis
-              condimentum ac, vestibulum eu nisl.
+              The Celo Africa DAO is dedicated to supporting emerging Web3 developers,designers, community managers
+              and others in
+              building impactful real-world solutions that solves relevant problems within the community.
+              To achieve this, the DAO is organizing accelerator programs, developers workshops, community and university events,
+              offering tailored support, including resources, mentorship, and a
+              nurturing environment. These initiatives aim to foster success,
+              innovation, and contribute to the overall growth and impact of the
+              Celo ecosystem.
             </Text>
           </Box>
         </Box>
       </Container>
-
 
       {/* For Tablet */}
       <Container
@@ -108,7 +106,13 @@ const VisionMission = () => {
             Our Vision
           </Heading>
 
-          <Text fontSize="22px" color="#fff" fontFamily="sofia-sans" mb="46px" mr="120px">
+          <Text
+            fontSize="22px"
+            color="#fff"
+            fontFamily="sofia-sans"
+            mb="46px"
+            mr="120px"
+          >
             Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate libero et velit interdum, ac aliquet odio mattis. Class
             aptent taciti sociosqu ad litora torquent per conubia nostra, per
@@ -134,14 +138,13 @@ const VisionMission = () => {
             height="48px"
             mt="46px"
             borderRadius="60px"
-          
           >
             <Link href="/">Read Whitepaper</Link>
           </Button>
         </Box>
 
         <Box as="div" id="mission2" mt="46px" mr="30px">
-          <Box as="div"  >
+          <Box as="div">
             <Heading
               as="h2"
               fontSize="28px"
@@ -153,7 +156,11 @@ const VisionMission = () => {
               Our Mission
             </Heading>
 
-            <Text fontSize="24px" color="#fff" fontFamily="Sofia Sans" ml='128px'
+            <Text
+              fontSize="24px"
+              color="#fff"
+              fontFamily="Sofia Sans"
+              ml="128px"
             >
               Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis. Class
@@ -163,21 +170,18 @@ const VisionMission = () => {
               condimentum ac, vestibulum eu nisl.
             </Text>
           </Box>
-        </Box>        
+        </Box>
       </Container>
 
-
-      
       {/* For Mobile */}
       <Container
         as="section"
         maxW="auto"
         pb="144px"
         pl="22px"
-        display={{base: "inline-block", sm: "none", lg: "none" }}
+        display={{ base: "inline-block", sm: "none", lg: "none" }}
         background="#1A0329"
       >
-           
         <Box as="div">
           <Heading
             as="h2"
@@ -190,7 +194,7 @@ const VisionMission = () => {
             Our Vision
           </Heading>
 
-          <Text fontSize="18px" color="#fff" fontFamily="sofia-sans" mb="46px" >
+          <Text fontSize="18px" color="#fff" fontFamily="sofia-sans" mb="46px">
             Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate libero et velit interdum, ac aliquet odio mattis. Class
             aptent taciti sociosqu ad litora torquent per conubia nostra, per
@@ -216,14 +220,13 @@ const VisionMission = () => {
             height="48px"
             mt="46px"
             borderRadius="60px"
-          
           >
             <Link href="/">Read Whitepaper</Link>
           </Button>
         </Box>
 
-        <Box as="div" id="mission3" mt="46px" mr="30px" >
-          <Box as="div"  >
+        <Box as="div" id="mission3" mt="46px" mr="30px">
+          <Box as="div">
             <Heading
               as="h2"
               fontSize="22px"
@@ -235,8 +238,7 @@ const VisionMission = () => {
               Our Mission
             </Heading>
 
-            <Text fontSize="18px" color="#fff" fontFamily="Sofia Sans" 
-            >
+            <Text fontSize="18px" color="#fff" fontFamily="Sofia Sans">
               Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis. Class
               aptent taciti sociosqu ad litora torquent per conubia nostra, per
@@ -245,7 +247,7 @@ const VisionMission = () => {
               condimentum ac, vestibulum eu nisl.
             </Text>
           </Box>
-        </Box>        
+        </Box>
       </Container>
     </>
   );

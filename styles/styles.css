@@ -41,6 +41,14 @@ a {
   font-family: sans-serif;
 }
 
+.proposal {
+  color: blue;
+}
+
+.proposal:hover {
+  text-decoration: underline;
+  color: black;
+}
 @media (max-width: 768px) {
   .container {
     width: 1100px;

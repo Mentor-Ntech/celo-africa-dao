@@ -75,6 +75,7 @@ const Team = () => {
       pt={{ base: "62px", lg: "72px" }}
       pb="139px"
       color="#F7F7F7"
+      id="team"
     >
       <Box textAlign="center" fontFamily="PT Serif">
         <Heading

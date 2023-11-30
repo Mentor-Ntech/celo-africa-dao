@@ -6,7 +6,7 @@ import { Heading, Box, Text, Link, Container, Flex } from "@chakra-ui/react";
 
 const resources = [
   { title: "WhitePaper", url: "#" },
-  { title: "FAQs", url: "#" },
+  { title: "FAQs", url: "#faqs" },
 ];
 
 const foundation = [
@@ -20,10 +20,10 @@ const developers = [
 ];
 
 const community = [
-  { icon: <FaSlack />, url: "https://slack.com" },
-  { icon: <FaTelegramPlane />, url: "https://telegram.com" },
-  { icon: <FaTwitter />, url: "https://twitter.com" },
-  { icon: <FaGithub />, url: "https://github.com" },
+  { icon: <FaSlack />, url: "https://join.slack.com/t/celoafricadao/shared_invite/zt-281hoym9f-lkz06ZlcroG7fZDffmjvCA" },
+  { icon: <FaTelegramPlane />, url: "https://www.telegram.org/celoafricadao/" },
+  { icon: <FaTwitter />, url: "https://x.com/celoafricadao" },
+  { icon: <FaGithub />, url: "https://github.com/celoafricadao" },
 ];
 
 const date = new Date();
@@ -55,8 +55,8 @@ const Footer = () => {
           </Heading>
 
           {resources.map((item, i) => (
-            <Text fontSize="lg" fontWeight="200" key={i}>
-              <Link>{item.title}</Link>
+            <Text fontSize="lg" fontWeight="200" key={i} >
+              <Link href={item.url}>{item.title}</Link>
             </Text>
           ))}
         </Box>

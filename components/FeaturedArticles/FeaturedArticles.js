@@ -23,7 +23,7 @@ import {
 
 const FeaturedArticles = () => {
   return (
-    <Container as="section" bg="#fbf6f1" maxWidth="auto" pt="60px" pb="120px">
+    <Container as="section" bg="#fbf6f1" maxWidth="auto" pt="60px" pb="120px" id="blogs">
       <Heading
         as="h2"
         textAlign="center"
@@ -31,6 +31,7 @@ const FeaturedArticles = () => {
         fontSize="40px"
         fontWeight="700"
         mb="20"
+        
       >
         Featured Articles
       </Heading>
@@ -182,7 +183,7 @@ const FeaturedArticles = () => {
               justifyContent="center"
               alignItems="center"
             >
-              <Link href="/">See More</Link>
+              <Link href="https://celoafricadao.hashnode.dev/">See More</Link>
             </Box>
           </TabPanel>
 

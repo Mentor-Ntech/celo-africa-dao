@@ -15,25 +15,25 @@ const faqsData = [
     id: 1,
     question: "What controls the DAO?",
     answer:
-      "do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat.",
+      "The DAO runs autonomously without a central control. The governance works that anyone is allowed to submit proposal but the multisig holders are in charge to review a proposal for the community to the vote on",
   },
   {
     id: 2,
     question: "How does the DAO work?",
     answer:
-      "do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat.",
+      "The DAO works autonomously, enabling individuals, community members and core contributors to submit proposal for activities within the DAO defined focus area from anywhere in Africa. The focus area ranges from developers education, technical workshop, university and community events, sponsored conferences etc. The proposals are voted for by the community members and approved by the multisig who manage the treasury for the DAO.",
   },
   {
     id: 3,
     question: " How can i be part of the DAO?",
     answer:
-      "do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat.",
+      "To become a member of the Celo Africa DAO, members need to join the DAO snapshot and participate in the voting process which doesn't require to hold specific amount of token to participate. Member are also required to join the DAO slack channel for inclusive community participation",
   },
   {
     id: 4,
     question: "When was the DAO created?",
     answer:
-      "do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat.",
+      "The DAO proposal was passed in March 2023, following passing of the onchain proposal CGP85 https://celo.stake.id/#/proposal/85",
   },
 ];
 
@@ -41,11 +41,12 @@ const Faqs = () => {
   return (
     <>
       <Flex
-        as="faq"
+        as="div"
         bg="#fbf6f1"
         py="20px"
         px={{ base: "15px", sm: "80px", md: "120px", lg: "200px" }}
         flexDirection="column"
+        id="faqs"
       >
         <Heading
           as="h2"

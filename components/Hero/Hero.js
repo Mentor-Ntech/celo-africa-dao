@@ -8,7 +8,7 @@ import {
     chakra,
     shouldForwardProp,
   } from "@chakra-ui/react";
-  import Link from "next/link";
+   import Link from "next/link";
   import { ArrowForwardIcon } from "@chakra-ui/icons";
   import { motion, isValidMotionProp } from "framer-motion";
   import Image from "next/image";
@@ -53,7 +53,7 @@ import {
 
   
         >
-          Dorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Advancing the Web3 adoption story in Africa 
         </Heading>
         <Text
           as="p"
@@ -67,10 +67,13 @@ import {
           mb={{base: "29px", sm:"20px", md:"50px",}}
           pr="80px"
         >
-          Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum, ac aliquet odio mattis.
+          
+         Join a community of developers, designers, founders and web3 users on 
+         the leading edge of blockchain technology in Africa.
         </Text>
-  
+
+        <Link href="https://join.slack.com/t/celoafricadao/shared_invite/zt-281hoym9f-lkz06ZlcroG7fZDffmjvCA" target="_blank">
+
         <Button
           rightIcon={<ArrowForwardIcon />}
           bg="#FCF951"
@@ -88,8 +91,10 @@ import {
           
   
         >
-          <Link href="/">Join the community</Link>
+          Join the community
         </Button>
+        </Link>
+        
       </Box>
   
         <ChakraBox width="595px"

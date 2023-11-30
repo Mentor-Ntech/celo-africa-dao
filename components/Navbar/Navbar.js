@@ -16,11 +16,11 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 
 const navList = [
-  { title: "DAO Proposals", path: "#" },
-  { title: "About", path: "/" },
-  { title: "Blog", path: "/" },
-  { title: "Team", path: "/" },
-  { title: "FAQs", path: "/" },
+  { title: "DAO Proposals", path: "https://celo.stake.id/#/proposal/85" },
+  { title: "About", path: "#about" },
+  { title: "Blog", path: "#blogs" },
+  { title: "Team", path: "#team" },
+  { title: "FAQs", path: "#faqs" },
 ];
 
 export default function Navbar() {
@@ -47,6 +47,7 @@ export default function Navbar() {
           <NextLink href="/home" passHref>
             Africa DAO
           </NextLink>
+          
         </Heading>
       </HStack>
 
